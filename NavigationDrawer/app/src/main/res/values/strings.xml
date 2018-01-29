@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">NavigationDrawer</string>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+
+    <string name="simple_navigation_drawer">SimpleNavigationDrawer</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+</resources>

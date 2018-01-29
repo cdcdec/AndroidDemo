@@ -15,12 +15,18 @@ public class ToolBarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_tool_bar);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setNavigationIcon(R.mipmap.ic_drawer_home);//设置导航栏图标
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(ToolBarActivity.this, "ToolBar最左侧导航按钮!", Toast.LENGTH_SHORT).show();
+                String title=toolbar.getTitle().toString();
+                if(title!=null && title.equals("Title")){
+                    toolbar.setTitle("ToolBar最左侧导航按钮");
+                }else{
+                    toolbar.setTitle("Title");
+                }
             }
         });
         toolbar.setLogo(R.mipmap.ic_launcher);//设置app logo

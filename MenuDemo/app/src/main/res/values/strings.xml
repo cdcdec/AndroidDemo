@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MenuDemo</string>
+
+    <string name="file">文件</string>
+
+
+    <string name="create_new">新建</string>
+
+    <string name="open">打开</string>
+
+
+</resources>

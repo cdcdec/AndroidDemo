@@ -1,4 +1,30 @@
 # MenuDemo
+#### 创建选项菜单
+是某个Activity 的主菜单项， 供您放置对应用产生全局影响的操作。
+
+```
+//来自Activity的方法
+public boolean onCreateOptionsMenu(Menu menu){
+  MenuInflater inflater = getMenuInflater();
+  inflater.inflate(R.menu.options_menu, menu);
+  return true;
+ }
+ //处理menu点击事件  来自Activity的方法
+ public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.create_new:
+                Toast.makeText(this,"新建",Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.open:
+                Toast.makeText(this,"打开",Toast.LENGTH_SHORT).show();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+ }
+```
+
+
 
 #### 使用XML定义菜单
 
@@ -12,7 +38,15 @@
 * android:id:项目特有的资源ID，让应用能够在用户选择项目时识别该项目。
 * android:icon:引用一个要用作项目图标的可绘制对象。
 * android:title:引用一个要用作项目标题的字符串。
-* android:showAsAction:指定此项应作为操作项目显示在应用栏中的时间和方式。
+* app:showAsAction:指定此项应作为操作项目显示在应用栏中的时间和方式。
 
+
+| 值                  | 描述                                       |
+| ------------------ | ---------------------------------------- |
+| ifRoom             | 如果有空间的话显示在状态栏上,状态栏最多显示5个item,多于5个的都显示在溢出菜单里面 |
+| withText           |                                          |
+| never              | 只显示在溢出菜单里面                               |
+| collapseActionView | The action view associated with this action item (as declared by android:actionLayout or android:actionViewClass) is collapsible.  Introduced in API Level 14. |
+|                    |                                          |
 
 

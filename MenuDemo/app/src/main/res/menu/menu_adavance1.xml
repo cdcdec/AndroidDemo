@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/appsGroup"
+        android:checkableBehavior="all"
+        android:visible="true"
+        android:enabled="true"
+        android:menuCategory="container"
+        >
+        <item
+            android:id="@+id/appItem1"
+            android:title="appItem1"
+            android:icon="@drawable/cnblogs"
+            android:checkable="true"
+            android:enabled="true"
+            android:orderInCategory="2"
+            app:showAsAction="ifRoom">
+        </item>
+        <item
+            android:id="@+id/appItem2"
+            android:title="appItem2"
+            android:icon="@drawable/codepen"
+            android:checkable="true"
+            android:enabled="true"
+            android:orderInCategory="3"
+            app:showAsAction="ifRoom">
+        </item>
+        <item
+            android:id="@+id/appItem3"
+            android:title="appItem3"
+            android:icon="@drawable/coding_net"
+            android:checkable="true"
+            android:enabled="true"
+            android:orderInCategory="1"
+            app:showAsAction="ifRoom">
+        </item>
+</group>
+
+
+</menu>

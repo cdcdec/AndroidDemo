@@ -9,14 +9,19 @@
     tools:context="com.cdc.menudemo.MainActivity">
 
     <Button
-        android:id="@+id/btn_toolbar_base"
+        android:id="@+id/btn_menu_base"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ToolBar（Base）" />
+        android:text="menu_base" />
 
     <Button
-        android:id="@+id/btn_toolbar_zhihu"
+        android:id="@+id/btn_menu_adavance1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ToolBar（知乎）" />
+        android:text="menu_adavance1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击支付宝菜单,删除手机菜单,并添加一个菜单"/>
 </LinearLayout>

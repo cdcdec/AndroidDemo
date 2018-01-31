@@ -6,14 +6,22 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.cdc.context_menu.ContextMenu1Activity;
+import com.cdc.options_menu.BaseActivity;
+import com.cdc.options_menu.MenuAdavance1Activity;
+import com.cdc.options_menu.MenuSimple1Activity;
+import com.cdc.options_menu.MenuSimpleExtendsActivity;
+
 public class MainActivity extends BaseActivity implements View.OnClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        findViewById(R.id.btn_menu_simple1).setOnClickListener(this);
         findViewById(R.id.btn_menu_base).setOnClickListener(this);
         findViewById(R.id.btn_menu_adavance1).setOnClickListener(this);
+        findViewById(R.id.btn_context_menu_1).setOnClickListener(this);
     }
     //来自Activity的方法
     @Override
@@ -51,6 +59,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
     public void onClick(View v) {
         int id=v.getId();
         switch(id){
+            case R.id.btn_menu_simple1:
+                Intent intentSimple1=new Intent();
+                intentSimple1.setClass(this,MenuSimple1Activity.class);
+                startActivity(intentSimple1);
+                break;
             case R.id.btn_menu_base:
                 Intent intent=new Intent();
                 intent.setClass(this,MenuSimpleExtendsActivity.class);
@@ -60,6 +73,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
                 Intent intentAdavance=new Intent();
                 intentAdavance.setClass(this,MenuAdavance1Activity.class);
                 startActivity(intentAdavance);
+                break;
+            case R.id.btn_context_menu_1:
+                Intent intentContextMenu1=new Intent();
+                intentContextMenu1.setClass(this,ContextMenu1Activity.class);
+                startActivity(intentContextMenu1);
                 break;
         }
     }

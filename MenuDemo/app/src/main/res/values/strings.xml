@@ -28,5 +28,14 @@
 
     <string name="submenu_item2">submenu_item2</string>
 
+    <string name="start">开始</string>
+
+    <string name="pause">暂停</string>
+
+    <string name="resume">resume</string>
+
+
+    <string name="over">结束</string>
+
 
 </resources>

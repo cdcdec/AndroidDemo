@@ -44,9 +44,9 @@ public boolean onCreateOptionsMenu(Menu menu){
 | 值                  | 描述                                       |
 | ------------------ | ---------------------------------------- |
 | ifRoom             | 如果有空间的话显示在状态栏上,状态栏最多显示5个item,多于5个的都显示在溢出菜单里面 |
-| withText           |                                          |
+| withText           | 只显示文本 不显示icon                            |
 | never              | 只显示在溢出菜单里面                               |
 | collapseActionView | The action view associated with this action item (as declared by android:actionLayout or android:actionViewClass) is collapsible.  Introduced in API Level 14. |
-|                    |                                          |
+| always             | 在toolbar上面显示                             |
 
 

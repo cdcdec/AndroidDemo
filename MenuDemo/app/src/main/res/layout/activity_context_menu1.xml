@@ -4,6 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.cdc.options_menu.BaseActivity">
+    tools:context="com.cdc.context_menu.ContextMenu1Activity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btContextMenu"
+        android:text="btContextMenu"/>
 
 </android.support.constraint.ConstraintLayout>

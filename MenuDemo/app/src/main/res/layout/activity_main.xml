@@ -9,6 +9,12 @@
     tools:context="com.cdc.menudemo.MainActivity">
 
     <Button
+        android:id="@+id/btn_menu_simple1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="menu_simple1"/>
+
+    <Button
         android:id="@+id/btn_menu_base"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,6 +25,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="menu_adavance1" />
+
+    <Button
+        android:id="@+id/btn_context_menu_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="btn_context_menu_1" />
 
     <TextView
         android:layout_width="match_parent"

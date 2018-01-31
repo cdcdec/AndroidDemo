@@ -1,4 +1,4 @@
-package com.cdc.menudemo;
+package com.cdc.options_menu;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
+import com.cdc.menudemo.R;
 
 public class BaseActivity extends AppCompatActivity {
 

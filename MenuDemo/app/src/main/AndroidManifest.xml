@@ -16,9 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BaseActivity" />
-        <activity android:name=".MenuSimpleExtendsActivity" />
-        <activity android:name=".MenuAdavance1Activity"></activity>
+        <activity android:name="com.cdc.options_menu.BaseActivity" />
+        <activity android:name="com.cdc.options_menu.MenuSimpleExtendsActivity" />
+        <activity android:name="com.cdc.options_menu.MenuAdavance1Activity" />
+        <activity android:name="com.cdc.options_menu.MenuSimple1Activity" />
+        <activity android:name="com.cdc.context_menu.ContextMenu1Activity"></activity>
     </application>
 
 </manifest>

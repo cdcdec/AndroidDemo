@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="btns">
+        <item>ListActivityArrayAdapter1</item>
+        <item>ListActivityArrayAdapter2</item>
+        <item>ArrayAdapter3</item>
+        <item>ArrayAdapter4</item>
+        <item>ArrayAdapter5</item>
+        <item>ArrayAdapter6</item>
+        <item>ArrayAdapter7</item>
+    </array>
+</resources>

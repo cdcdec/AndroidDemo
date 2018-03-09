@@ -3,10 +3,18 @@
     <array name="btns">
         <item>ListActivityArrayAdapter1</item>
         <item>ListActivityArrayAdapter2</item>
-        <item>ArrayAdapter3</item>
-        <item>ArrayAdapter4</item>
-        <item>ArrayAdapter5</item>
-        <item>ArrayAdapter6</item>
-        <item>ArrayAdapter7</item>
+        <item>ListActivityArrayAdapter3</item>
+        <item>Notifaction1</item>
+        <item>Notifaction2</item>
+        <item>Notifaction3</item>
+
+        <item>普通通知</item>
+        <item>BigTextStyle</item>
+        <item>InboxStyle</item>
+        <item>BigPictureStyle</item>
+        <item>带下载的通知</item>
+        <item>HangUp 横幅通知</item>
+        <item>MediaStyle</item>
+        <item>自定义View</item>
     </array>
 </resources>

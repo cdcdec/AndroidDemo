@@ -30,7 +30,14 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.cdc.adapter.ListActivityArrayAdapter3"></activity>
+        <activity android:name="com.cdc.adapter.ListActivityArrayAdapter3">
+            <intent-filter>
+                <action android:name="ListActivityArrayAdapter3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.cdc.notifaction.NotifactionResultActivity"></activity>
     </application>
 
 </manifest>

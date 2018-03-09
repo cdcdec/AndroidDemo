@@ -8,6 +8,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
+import com.cdc.notifaction.NotifactionTool;
+
 public class MainActivity extends ListActivity{
 
     @Override
@@ -25,8 +27,24 @@ public class MainActivity extends ListActivity{
         super.onListItemClick(l, v, position, id);
         ListAdapter listAdapter=getListAdapter();
         String str=listAdapter.getItem(position).toString();
-        Intent intent=new Intent();
-        intent.setAction(str);
-        startActivity(intent);
+        if(str.contains("ArrayAdapter")){
+            Intent intent=new Intent();
+            intent.setAction(str);
+            startActivity(intent);
+        }else if(str.equalsIgnoreCase("Notifaction1")){
+            NotifactionTool.createSimpleNotifaction(this);
+        }else if(str.equalsIgnoreCase("Notifaction2")){
+        NotifactionTool.createNotifaction2(this,"notifaction2");
+        }else if(str.equalsIgnoreCase("Notifaction3")){
+            NotifactionTool.createNotifaction3(this,"notifaction3");
+        }else if(str.equalsIgnoreCase("普通通知")){
+            NotifactionTool.simpleNotify(this);
+        }else if(str.equalsIgnoreCase("BigTextStyle")){
+            NotifactionTool.bigTextStyle(this);
+        }else if(str.equalsIgnoreCase("InboxStyle")){
+            NotifactionTool.inBoxStyle(this);
+        }else if(str.equalsIgnoreCase("BigPictureStyle")){
+            NotifactionTool.bigPictureStyle(this);
+        }
     }
 }

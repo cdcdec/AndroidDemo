@@ -36,9 +36,21 @@ public class People {
     @Override
     public String toString() {
         StringBuilder sb=new StringBuilder();
+        sb.append("姓名:");
         sb.append(name);
+        sb.append(",年龄:");
         sb.append(age+"");
+        sb.append(",地址:");
         sb.append(position);
         return sb.toString();
+    }
+
+    public People(){
+
+    }
+    public People(String name,int age,String position){
+        this.name=name;
+        this.age=age;
+        this.position=position;
     }
 }

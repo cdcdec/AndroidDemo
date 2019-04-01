@@ -1,4 +1,4 @@
 # AndroidDemo
 
-[ToolBarDemo]: /ToolBarDemo/ToolBarDemo.md
+[RichTextDemo](https://github.com/cdcdec/AndroidDemo/tree/master/RichTextDemo)
 

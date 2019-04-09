@@ -8,12 +8,11 @@ import kotlinx.android.synthetic.main.activity_main.*
 import android.widget.Toast
 import android.util.Log
 import okhttp3.*
+import okhttp3.logging.HttpLoggingInterceptor
 import java.io.IOException
 
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
-    private var mOkHttpClient: OkHttpClient? = null
-
     val MEDIA_TYPE_MARKDOWN = MediaType.parse("text/x-markdown; charset=utf-8")
     private val MEDIA_TYPE_PNG = MediaType.parse("image/png")
 
@@ -22,7 +21,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        mOkHttpClient=OkHttp3Tool().initOkHttpClient(this)
+
+
         bt_send.setOnClickListener(this)
         bt_postsend.setOnClickListener(this)
         bt_sendfile.setOnClickListener(this)
@@ -50,6 +50,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
      * get异步请求
      */
     private fun getAsynHttp() {
+        val logging = HttpLoggingInterceptor { message -> Log.d("TTT", message) }
+        logging.level = HttpLoggingInterceptor.Level.BODY
+        var mOkHttpClient=OkHttpClient.Builder().addNetworkInterceptor(logging).build()
         var requestBuilder = Request.Builder().url("https://api.github.com/users/cdcdec")
         //requestBuilder.method("GET", null)
         var request = requestBuilder.build()
@@ -62,11 +65,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 var str = ""
                 if (null != response.cacheResponse()) {
                     str = response.cacheResponse().toString()+"==cache"
-                    Log.i("wangshu", "cache---$str")
+                   // Log.i("wangshu", "cache---$str")
                 } else {
                     response.body()?.string()
                     str = response.networkResponse().toString()+"==network"
-                    Log.i("wangshu", "network---$str")
+                    //Log.i("wangshu", "network---$str")
                 }
                 runOnUiThread { Toast.makeText(applicationContext, "请求成功:$str", Toast.LENGTH_SHORT).show() }
             }

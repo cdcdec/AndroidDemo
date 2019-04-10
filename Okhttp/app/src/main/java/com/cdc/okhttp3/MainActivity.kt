@@ -50,9 +50,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
      * get异步请求
      */
     private fun getAsynHttp() {
-        val logging = HttpLoggingInterceptor { message -> Log.d("TTT", message) }
+//        val logging = HttpLoggingInterceptor(HttpLoggingInterceptor.Logger {
+//            Log.w("ppp",it)
+//        })
+
+        val logging = HttpLoggingInterceptor()
         logging.level = HttpLoggingInterceptor.Level.BODY
-        var mOkHttpClient=OkHttpClient.Builder().addNetworkInterceptor(logging).build()
+        var mOkHttpClient=OkHttpClient.Builder().addInterceptor(logging).build()
         var requestBuilder = Request.Builder().url("https://api.github.com/users/cdcdec")
         //requestBuilder.method("GET", null)
         var request = requestBuilder.build()

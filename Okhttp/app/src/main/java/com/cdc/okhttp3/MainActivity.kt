@@ -1,23 +1,18 @@
 package com.cdc.okhttp3
-
 import androidx.appcompat.app.AppCompatActivity
-
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import android.widget.Toast
-import android.util.Log
 import okhttp3.*
 import okhttp3.logging.HttpLoggingInterceptor
 import java.io.IOException
-
+import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     val MEDIA_TYPE_MARKDOWN = MediaType.parse("text/x-markdown; charset=utf-8")
     private val MEDIA_TYPE_PNG = MediaType.parse("image/png")
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -50,15 +45,20 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
      * get异步请求
      */
     private fun getAsynHttp() {
-//        val logging = HttpLoggingInterceptor(HttpLoggingInterceptor.Logger {
-//            Log.w("ppp",it)
-//        })
-
-        val logging = HttpLoggingInterceptor()
+        //Log Info,Warn,Error可以看到日志;Log Verbose Debug看不到日志
+        val logging = HttpLoggingInterceptor(HttpLoggingInterceptor.Logger {
+            Log.i("ppp",it)
+        })
+        logging.redactHeader("Server")
+        //val logging = HttpLoggingInterceptor()  看不到日志
         logging.level = HttpLoggingInterceptor.Level.BODY
-        var mOkHttpClient=OkHttpClient.Builder().addInterceptor(logging).build()
+        var mOkHttpClient=OkHttpClient.Builder()
+                .addInterceptor(logging)
+                .connectTimeout(15, TimeUnit.SECONDS)
+                .writeTimeout(20, TimeUnit.SECONDS)
+                .readTimeout(20, TimeUnit.SECONDS)
+                .build()
         var requestBuilder = Request.Builder().url("https://api.github.com/users/cdcdec")
-        //requestBuilder.method("GET", null)
         var request = requestBuilder.build()
         var mcall = mOkHttpClient?.newCall(request)
         mcall?.enqueue(object : Callback {

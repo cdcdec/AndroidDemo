@@ -36,7 +36,7 @@ import butterknife.BindView;
  * Created by YanZhenjie on 2018/3/28.
  */
 public class NormalView
-  extends Contract.NormalView {
+        extends Contract.NormalView {
 
     @BindView(R.id.refresh_layout)
     SwipeRefreshLayout mRefreshLayout;

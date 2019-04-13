@@ -30,7 +30,7 @@ import java.util.List;
 public final class Contract {
 
     public interface NormalPresenter
-      extends BasePresenter {
+            extends BasePresenter {
 
         /**
          * Refresh data.
@@ -49,7 +49,7 @@ public final class Contract {
     }
 
     public static abstract class NormalView
-      extends BaseView<NormalPresenter> {
+            extends BaseView<NormalPresenter> {
 
         public NormalView(Activity activity, NormalPresenter presenter) {
             super(activity, presenter);

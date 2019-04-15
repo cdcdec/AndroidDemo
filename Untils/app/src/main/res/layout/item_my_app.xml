@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/reCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".app.MyAppActivity">
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.allen.library.SuperTextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:sLeftTextString="app名称"
+                app:sLeftIconRes="@mipmap/ic_launcher"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent">
+        </com.allen.library.SuperTextView>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

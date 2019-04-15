@@ -3,6 +3,7 @@ package com.cdc.untils
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.blankj.utilcode.util.ActivityUtils
+import com.cdc.untils.app.MyAppActivity
 import com.cdc.untils.device.MyDeviceActivity
 import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
@@ -22,5 +23,13 @@ class MainActivity : AppCompatActivity() {
         btn1.setOnClickListener{
             ActivityUtils.startActivity(MyDeviceActivity::class.java)
         }
+
+        btn2.setOnClickListener{
+            ActivityUtils.startActivity(MyAppActivity::class.java)
+        }
+
+
+
+
     }
 }

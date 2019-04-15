@@ -3,6 +3,15 @@
           xmlns:tools="http://schemas.android.com/tools"
           package="com.cdc.untils">
 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission
+            android:name="android.permission.REBOOT"
+            tools:ignore="ProtectedPermissions"/>
+    <uses-permission
+            android:name="android.permission.SHUTDOWN"
+            tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -11,7 +20,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Keepalive.OnePiexlActivity">
+        <activity android:name=".app.MyAppActivity">
         </activity>
         <activity android:name=".base.BaseActivity">
         </activity>

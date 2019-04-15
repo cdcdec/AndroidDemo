@@ -1,23 +1,227 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.LinearLayoutCompat
+<android.support.v4.widget.NestedScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".device.MyDeviceActivity">
+        tools:context=".device.MyDeviceActivity"
+>
+    <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+    >
+        <com.allen.library.SuperTextView
+                android:id="@+id/stv0"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+        <com.allen.library.SuperTextView
+                android:id="@+id/stv1"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+        <com.allen.library.SuperTextView
+                android:id="@+id/stv2"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+        <com.allen.library.SuperTextView
+                android:id="@+id/stv3"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+        <com.allen.library.SuperTextView
+                android:id="@+id/stv4"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+        <com.allen.library.SuperTextView
+                android:id="@+id/stv5"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+        <com.allen.library.SuperTextView
+                android:id="@+id/stvSd"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+        <com.allen.library.SuperTextView
+                android:id="@+id/stvSd1"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+        <com.allen.library.SuperTextView
+                android:id="@+id/stvSd2"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+        <com.allen.library.SuperTextView
+                android:id="@+id/stvSd3"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+
+        <com.allen.library.SuperTextView
+                android:id="@+id/stvSd31"
+                style="@style/stvStyle1"
+                android:layout_height="wrap_content"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+        />
+
+        <com.allen.library.SuperTextView
+                android:id="@+id/stvRom"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+
+        <com.allen.library.SuperTextView
+                android:id="@+id/stvRomInfo"
+                style="@style/stvStyle1"
+                android:layout_height="wrap_content"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+        />
+
+        <com.allen.library.SuperTextView
+                android:id="@+id/stvDevice0"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+
+        <com.allen.library.SuperTextView
+                android:id="@+id/stvDevice"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+
+        <com.allen.library.SuperTextView
+                android:id="@+id/stvDevice1"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+
+        <com.allen.library.SuperTextView
+                android:id="@+id/stvDevice2"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+        <com.allen.library.SuperTextView
+                android:id="@+id/stvDevice3"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+
+        <com.allen.library.SuperTextView
+                android:id="@+id/stvDevice4"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+
+        <com.allen.library.SuperTextView
+                android:id="@+id/stvDevice5"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+
+        <com.allen.library.SuperTextView
+                android:id="@+id/stvDevice6"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+
+        <com.allen.library.SuperTextView
+                android:id="@+id/stvDevice7"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+
+        <com.allen.library.SuperTextView
+                android:id="@+id/stvDevice8"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+
+        <com.allen.library.SuperTextView
+                android:id="@+id/stvDevice9"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+
+        <com.allen.library.SuperTextView
+                android:id="@+id/stvDevice10"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+
+        <com.allen.library.SuperTextView
+                android:id="@+id/stvDevice11"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
+
+        <com.allen.library.SuperTextView
+                android:id="@+id/stvDevice12"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="0.2dp"
+                app:sDividerLineType="bottom"
+                style="@style/stvStyle1"
+        />
 
 
-    <com.allen.library.SuperTextView
-            android:id="@+id/stv1"
-            style="@style/comBtnStyle1"
-    />
+    </android.support.v7.widget.LinearLayoutCompat>
 
-    <com.allen.library.SuperTextView
-            android:id="@+id/stv2"
-            style="@style/comBtnStyle1"
-            app:sLeftTextString="屏幕高度"
-            app:sRightTextString="1280px"
-    />
-</android.support.v7.widget.LinearLayoutCompat>
+</android.support.v4.widget.NestedScrollView>

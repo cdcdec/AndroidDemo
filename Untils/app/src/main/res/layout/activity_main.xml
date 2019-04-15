@@ -14,4 +14,10 @@
             android:text="@string/my_device"
            />
 
+    <Button
+            android:id="@+id/btn2"
+            style="@style/comBtnStyle1"
+            android:text="@string/my_app"
+    />
+
 </android.support.v7.widget.LinearLayoutCompat>

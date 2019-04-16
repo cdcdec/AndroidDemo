@@ -30,32 +30,32 @@ public class TypeActivity extends AppCompatActivity {
                 superTextView.setTopDividerLineColor(getResources().getColor(R.color.colorAccent))
                         .setBottomDividerLineColor(getResources().getColor(R.color.colorPrimary));
                 break;
-            case 1:
+            case 1://通用
                 setContentView(R.layout.layout1);
                 break;
-            case 2:
+            case 2://饿了吗
                 setContentView(R.layout.layout2);
                 break;
-            case 3:
+            case 3://金融类
                 setContentView(R.layout.layout3);
                 break;
-            case 4:
+            case 4://左中右
                 setContentView(R.layout.layout4);
                 break;
-            case 5:
+            case 5://带图片类
                 setContentView(R.layout.layout5);
                 setData();
                 break;
-            case 6:
+            case 6://对齐效果
                 setContentView(R.layout.layout6);
                 superTextView4 = (SuperTextView) findViewById(R.id.super_tv4);
                 superTextView4.setCenterTextGravity(Gravity.LEFT);
 
                 break;
-            case 7:
+            case 7://互动按钮
                 setContentView(R.layout.layout7);
                 break;
-            case 8:
+            case 8://圆角样式
                 setContentView(R.layout.layout8);
                 break;
 

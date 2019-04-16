@@ -7,16 +7,12 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
-
     private Button button0, button1, button2, button3,
             button4, button5, button6, button7,button8, list_button, click_button,super_button;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         button0 = (Button) findViewById(R.id.button0);
         button1 = (Button) findViewById(R.id.button1);
         button2 = (Button) findViewById(R.id.button2);
@@ -93,15 +89,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent.putExtra("type", 8);
                 startActivity(intent);
                 break;
-            case R.id.list_button:
+            case R.id.list_button://在列表中使用
                 intent.setClass(this, ListActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.click_button:
+            case R.id.click_button://点击事件使用
+
                 intent.setClass(this, ClickActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.super_button:
+            case R.id.super_button://超级按钮
                 intent.setClass(this, SuperButtonActivity.class);
                 startActivity(intent);
                 break;

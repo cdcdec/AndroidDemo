@@ -5,9 +5,7 @@ import android.os.Bundle;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.Toast;
-
 import com.allen.library.SuperTextView;
-
 public class ClickActivity extends AppCompatActivity {
 
     private SuperTextView superTextView, superTextView_cb, superTextView_switch;

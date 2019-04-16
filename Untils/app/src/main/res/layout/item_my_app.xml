@@ -6,6 +6,9 @@
         android:id="@+id/reCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true"
         tools:context=".app.MyAppActivity">
     <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -13,11 +16,121 @@
         <com.allen.library.SuperTextView
                 android:id="@+id/tv1"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="wrap_content"
+                android:minHeight="80dp"
                 app:sLeftTextString="app名称"
+                app:sRightTextString="app版本号"
+                app:sLeftViewMarginRight="200dp"
+                app:sRightViewMarginLeft="200dp"
                 app:sLeftIconRes="@mipmap/ic_launcher"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent">
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:sUseRipple="false"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="1dp"
+        >
         </com.allen.library.SuperTextView>
+
+        <com.allen.library.SuperTextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                app:sLeftTextString="包名"
+                app:sRightTextString="xxxx"
+                app:sLeftViewMarginRight="200dp"
+                app:sRightViewMarginLeft="200dp"
+                app:sUseRipple="false"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="1dp"
+                app:layout_constraintTop_toBottomOf="@id/tv1"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+        <com.allen.library.SuperTextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                app:sLeftTextString="包路径"
+                app:sRightTextString="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                app:sLeftViewMarginRight="200dp"
+                app:sRightViewMarginLeft="200dp"
+                app:sUseRipple="false"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="1dp"
+                app:layout_constraintTop_toBottomOf="@id/tv2"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <com.allen.library.SuperTextView
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                app:sLeftTextString="是否系统应用"
+                app:sRightTextString="是"
+                app:sLeftViewMarginRight="200dp"
+                app:sRightViewMarginLeft="200dp"
+                app:sUseRipple="false"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="1dp"
+                app:layout_constraintTop_toBottomOf="@id/tv3"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <com.allen.library.SuperTextView
+                android:id="@+id/tv5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                app:sLeftTextString="是否DEBUG"
+                app:sRightTextString="是"
+                app:sLeftViewMarginRight="200dp"
+                app:sRightViewMarginLeft="200dp"
+                app:sUseRipple="false"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="1dp"
+                app:layout_constraintTop_toBottomOf="@id/tv4"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+        <com.allen.library.SuperTextView
+                android:id="@+id/tv6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                app:sLeftTextString="MD5"
+                app:sRightTextString="是"
+                app:sLeftViewMarginRight="200dp"
+                app:sRightViewMarginLeft="200dp"
+                app:sUseRipple="false"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="1dp"
+                app:layout_constraintTop_toBottomOf="@id/tv5"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <com.allen.library.SuperTextView
+                android:id="@+id/tv7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                app:sLeftTextString="SHA1"
+                app:sRightTextString="是"
+                app:sLeftViewMarginRight="200dp"
+                app:sRightViewMarginLeft="200dp"
+                app:sUseRipple="false"
+                app:sDividerLineColor="@color/colorPrimary"
+                app:sDividerLineHeight="1dp"
+                app:layout_constraintTop_toBottomOf="@id/tv6"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+        <com.allen.library.SuperTextView
+                android:id="@+id/tv8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                app:sLeftTextString="SHA256"
+                app:sRightTextString="是"
+                app:sLeftViewMarginRight="200dp"
+                app:sRightViewMarginLeft="200dp"
+                app:sUseRipple="false"
+                app:layout_constraintTop_toBottomOf="@id/tv7"
+                app:layout_constraintLeft_toLeftOf="parent"/>
     </android.support.constraint.ConstraintLayout>
 </android.support.v7.widget.CardView>

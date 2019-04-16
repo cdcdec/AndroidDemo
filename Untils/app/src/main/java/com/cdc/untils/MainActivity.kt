@@ -11,14 +11,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         initView()
-
-
-
-
     }
-
     private fun initView(){
         btn1.setOnClickListener{
             ActivityUtils.startActivity(MyDeviceActivity::class.java)
@@ -27,9 +21,5 @@ class MainActivity : AppCompatActivity() {
         btn2.setOnClickListener{
             ActivityUtils.startActivity(MyAppActivity::class.java)
         }
-
-
-
-
     }
 }

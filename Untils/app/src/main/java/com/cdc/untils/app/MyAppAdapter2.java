@@ -1,5 +1,4 @@
 package com.cdc.untils.app;
-
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -14,14 +13,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MyAppAdapter2  extends RecyclerView.Adapter<MyAppAdapter2.RecyclerHolder> {
-
     private Context mContext;
     private List<AppUtils.AppInfo> dataList = new ArrayList<>();
-
     public MyAppAdapter2(RecyclerView recyclerView) {
         this.mContext = recyclerView.getContext();
     }
-
     public void setData(List<AppUtils.AppInfo> dataList) {
         if (null != dataList) {
             this.dataList.clear();
@@ -54,7 +50,6 @@ public class MyAppAdapter2  extends RecyclerView.Adapter<MyAppAdapter2.RecyclerH
             super(itemView);
             textView = (SuperTextView) itemView.findViewById(R.id.tv1);
         }
-
 
     }
 }

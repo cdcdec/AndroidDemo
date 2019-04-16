@@ -7,7 +7,7 @@ import com.cdc.untils.R
 import kotlinx.android.synthetic.main.activity_my_app.*
 import android.support.v7.widget.OrientationHelper
 import android.support.v7.widget.LinearLayoutManager
-
+import android.view.View
 
 
 class MyAppActivity : AppCompatActivity() {
@@ -23,5 +23,20 @@ class MyAppActivity : AppCompatActivity() {
         //设置为垂直布局，这也是默认的
         layoutManager.orientation = OrientationHelper.VERTICAL
         reApp.adapter=adapter
+
+        adapter.setItemListener(object:MyAppAdapter.onRecyclerItemClickerListener{
+            override fun onRecyclerItemClick(view: View, data: Any, position: Int) {
+                var appInfo:AppUtils.AppInfo=data as AppUtils.AppInfo
+                AppUtils.launchApp(appInfo.packageName)
+            }
+        })
+
+
+
+
+
+
+
+
     }
 }

@@ -42,8 +42,7 @@ class HomeFragment : BaseFragment(), HomeContract.View, SwipeRefreshLayout.OnRef
     override fun getLayoutResources(): Int {
         return R.layout.home_fragment
     }
-
-    override fun initView() {
+    override fun initView(){
         mPresenter = HomePresenter(this!!.context!!, this)
         mPresenter?.start()
         recyclerView.layoutManager = LinearLayoutManager(context)

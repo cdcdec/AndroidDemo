@@ -19,6 +19,7 @@ class HomePresenter(context: Context,view : HomeContract.View) : HomeContract.Pr
     val mModel : HomeModel by lazy {
         HomeModel()
     }
+
     init {
         mView = view
         mContext = context

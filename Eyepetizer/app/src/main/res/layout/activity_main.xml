@@ -29,26 +29,25 @@
 
     </android.support.v7.widget.Toolbar>
     <FrameLayout
-        android:layout_above="@id/rg_root"
+        android:layout_above="@+id/rg_root"
         android:layout_below="@id/toolbar"
         android:id="@+id/fl_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     </FrameLayout>
     <View
-        android:layout_above="@+id/rg_root"
-        android:background="@color/gray"
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"></View>
+            android:layout_above="@+id/rg_root"
+            android:background="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
     <RadioGroup
-        android:id="@+id/rg_root"
+        android:id="@id/rg_root"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="@color/white"
         android:orientation="horizontal"
         android:padding="5dp">
-
         <RadioButton
             android:textSize="10sp"
             android:id="@+id/rb_home"

@@ -1,11 +1,8 @@
 package com.tt.lvruheng.eyepetizer.ui
-
 import android.graphics.Typeface
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
-import android.util.Log
 import android.view.KeyEvent
 import android.view.View
 import com.tt.lvruheng.eyepetizer.R
@@ -20,8 +17,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 import android.widget.Toast
 import com.gyf.immersionbar.ImmersionBar
-
-
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     private  var homeFragment: HomeFragment? = null
     private var findFragment: FindFragment? = null
@@ -29,6 +24,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private var mineFragment: MineFragment? = null
     private var mExitTime: Long = 0
     var toast: Toast? = null
+
     lateinit var searchFragment: SearchFragment
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,7 +54,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
         }
     }
-
     private fun getToday(): String {
         var list = arrayOf("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
         var data: Date = Date()

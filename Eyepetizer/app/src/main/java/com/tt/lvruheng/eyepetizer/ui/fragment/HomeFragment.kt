@@ -2,6 +2,7 @@ package com.tt.lvruheng.eyepetizer.ui.fragment
 import android.support.v4.widget.SwipeRefreshLayout
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import com.tt.lvruheng.eyepetizer.R
 import com.tt.lvruheng.eyepetizer.adapter.HomeAdatper
 import com.tt.lvruheng.eyepetizer.mvp.contract.HomeContract
@@ -67,5 +68,11 @@ class HomeFragment : BaseFragment(), HomeContract.View, SwipeRefreshLayout.OnRef
             mIsRefresh = true
             mPresenter?.start()
         }
+    }
+
+    override fun onFragmentVisiableChange(b: Boolean) {
+        Log.e("mvp1", "$b==isFragmentVisiable=$isFragmentVisiable")
+        super.onFragmentVisiableChange(b)
+        Log.e("mvp2", "$b==isFragmentVisiable=$isFragmentVisiable")
     }
 }

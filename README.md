@@ -1,12 +1,10 @@
 # AndroidDemo
 
-[RichTextDemo](https://github.com/cdcdec/AndroidDemo/tree/master/RichTextDemo)
+SwitchIcon
 
-[头条屏幕适配](https://github.com/cdcdec/AndroidDemo/tree/master/ScreenAdaptation)
+切换应用图标
 
-[设备和app相关Utils](https://github.com/cdcdec/AndroidDemo/blob/master/Untils/RERADME.md)
+https://github.com/ywp0919/SwitchIconDemo
 
-[SupertextView](https://github.com/cdcdec/AndroidDemo/tree/master/Supertextview)
 
-Eyepetizer 开眼视频 MVP  kotlin  demo
 

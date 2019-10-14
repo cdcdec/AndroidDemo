@@ -1,0 +1,85 @@
+apply plugin: 'com.android.application'
+
+def apkTime = getTimeSuffix()
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    signingConfigs {
+        androidcode {
+            keyAlias 'androidcode'
+            keyPassword 'code-android'
+            storeFile file('E:/Android/workplace/AndroidDemo/AndroidCode.jks')
+            storePassword 'code-android'
+        }
+    }
+    defaultConfig {
+        applicationId "com.cdc.androiddemo"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+        resConfigs "zh"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.androidcode
+            zipAlignEnabled true
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.androidcode
+        }
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName ="${getAppName()}_${defaultConfig.versionName}_${apkTime}_${defaultConfig.versionCode}.apk"
+
+        }
+    }
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    aaptOptions.cruncherEnabled = false
+
+    aaptOptions.useNewCruncher = false
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+}
+
+//apk包的后缀。年月日，例如20181203174200。
+static def getTimeSuffix() {
+    def date = new Date()
+    def time = date.format('yyyyMMddHHmmss')
+    return time
+}
+
+
+ def getAppName(){
+    def name = android.defaultConfig.applicationId
+     def index=name.lastIndexOf('.')
+     def resultName=name.substring(index+1,name.length())
+    return resultName
+}

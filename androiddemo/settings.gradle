@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':baserecyclerviewadapterhelper', ':materialspinner'
 rootProject.name='AndroidDemo'

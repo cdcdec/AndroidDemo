@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cdc.crash">
+
+    <application>
+
+    <activity
+        android:name="com.cdc.crash.DefaultErrorActivity"
+        android:process=":error_activity" />
+    <provider
+        android:name="com.cdc.crash.CrashInitProvider"
+        android:authorities="${applicationId}.CrashInitProvider"
+        android:exported="false"
+        android:initOrder="101" />
+
+    </application>
+
+</manifest>

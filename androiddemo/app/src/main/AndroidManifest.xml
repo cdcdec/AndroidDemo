@@ -30,7 +30,6 @@
         <activity android:name=".EmptyViewUseActivity" />
         <activity android:name=".ItemDragAndSwipeUseActivity" />
         <activity android:name=".ExpandableUseActivity" />
-        <activity android:name=".my.expand.MyExpandableUseActivity" />
         <activity android:name=".DataBindingUseActivity" />
         <activity android:name=".ItemClickActivity"></activity>
         <activity android:name=".base.BaseActivity"></activity>

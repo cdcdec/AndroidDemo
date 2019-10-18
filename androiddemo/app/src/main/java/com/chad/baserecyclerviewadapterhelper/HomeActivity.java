@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 
 import com.chad.baserecyclerviewadapterhelper.adapter.HomeAdapter;
 import com.chad.baserecyclerviewadapterhelper.entity.HomeItem;
-import com.chad.baserecyclerviewadapterhelper.my.expand.MyExpandableUseActivity;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 
 import java.util.ArrayList;

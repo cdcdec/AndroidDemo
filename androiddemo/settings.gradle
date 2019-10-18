@@ -1,2 +1,2 @@
-include ':app' , ':dialogs'
+include ':app', ':lib', ':dimenTool' , ':dialogs'
 rootProject.name='AndroidDemo'

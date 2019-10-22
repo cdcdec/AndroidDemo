@@ -8,10 +8,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/alertview" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/dialogs" />
-            <option value="$PROJECT_DIR$/dimenTool" />
-            <option value="$PROJECT_DIR$/lib" />
+            <option value="$PROJECT_DIR$/circledialog" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

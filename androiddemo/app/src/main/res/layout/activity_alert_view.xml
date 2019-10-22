@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".alertView.AlertViewActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btnAlertShow1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp25"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:text="alertShow1"
+            android:onClick="alertShow1"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/btnAlertShow1_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp25"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:text="alertShow1_1"
+            android:onClick="alertShow1_1"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/btnAlertShow1_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp25"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:text="alertShow1_2"
+            android:onClick="alertShow1_2"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/btnAlertShow1_3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp25"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:text="alertShow1_3"
+            android:onClick="alertShow1_3"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/btnAlertShow1_4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp25"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:text="alertShow1_4"
+            android:onClick="alertShow1_4"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:id="@+id/btnAlertShow2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp25"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp3"
+            android:text="alertShow2"
+            android:onClick="alertShow2"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/btnAlertShow3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp25"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp3"
+            android:text="ActionSheet高亮按钮其他按钮"
+            android:onClick="alertShow3"
+            android:textAllCaps="false"
+            />
+
+
+        <Button
+            android:id="@+id/btnAlertShow4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp25"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp3"
+            android:text="ActionSheet标题取消高亮按钮"
+            android:onClick="alertShow4"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/btnAlertShow5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp25"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp3"
+            android:text="ActionSheet标题内容取消"
+            android:onClick="alertShow5"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/btnAlertShow6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp25"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp3"
+            android:text="上传头像"
+            android:onClick="alertShow6"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/btnAlertShow7"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp25"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp3"
+            android:text="添加额外输入框,软键盘关闭"
+            android:onClick="alertShow7"
+            android:textAllCaps="false"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

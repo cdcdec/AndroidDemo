@@ -1,2 +1,2 @@
-include ':app', ':alertview', ':circledialog'
+include ':app', ':alertview', ':circledialog', ':dialog'
 rootProject.name='AndroidDemo'

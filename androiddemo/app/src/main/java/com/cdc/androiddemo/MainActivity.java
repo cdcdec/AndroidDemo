@@ -7,7 +7,8 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.cdc.androiddemo.alertView.AlertViewActivity;
-import com.cdc.androiddemo.cirlceDialog.CircleDialogActivity;
+import com.cdc.androiddemo.circleDialog.CircleDialogActivity;
+import com.cdc.androiddemo.myCircleDialog.MyCircleDialogActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,5 +35,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void circleDialog(View view) {
         goToPage(CircleDialogActivity.class);
+    }
+
+
+    public void myCircleDialog(View view) {
+        goToPage(MyCircleDialogActivity.class);
     }
 }

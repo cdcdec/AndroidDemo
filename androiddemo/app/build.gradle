@@ -71,11 +71,12 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'com.airbnb.android:lottie:3.1.0'
-    implementation 'com.squareup.picasso:picasso:2.5.2'
-    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
     implementation project(path: ':alertview')
     implementation project(path: ':circledialog')
     implementation 'com.google.android.material:material:1.0.0'
+    implementation project(path: ':dialog')
 }
 
 //apk包的后缀。年月日，例如20181203174200。

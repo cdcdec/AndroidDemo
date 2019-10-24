@@ -1,4 +1,4 @@
-package com.cdc.androiddemo.cirlceDialog.list;
+package com.cdc.androiddemo.circleDialog.list;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -16,7 +16,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.cdc.androiddemo.R;
-import com.cdc.androiddemo.cirlceDialog.entities.NavItemEntity;
+import com.cdc.androiddemo.circleDialog.entities.NavItemEntity;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.google.android.material.tabs.TabLayout;

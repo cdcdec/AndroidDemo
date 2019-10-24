@@ -1,4 +1,4 @@
-package com.cdc.androiddemo.cirlceDialog.entities;
+package com.cdc.androiddemo.circleDialog.entities;
 
 import com.chad.library.adapter.base.entity.SectionEntity;
 

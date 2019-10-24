@@ -1,4 +1,4 @@
-package com.cdc.androiddemo.cirlceDialog;
+package com.cdc.androiddemo.circleDialog;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -11,7 +11,7 @@ import java.util.List;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.cdc.androiddemo.cirlceDialog.entities.PictureTypeEntity;
+import com.cdc.androiddemo.circleDialog.entities.PictureTypeEntity;
 
 /**
  * Created by hupei on 2019/5/7 16:28.

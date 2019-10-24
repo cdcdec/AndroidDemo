@@ -8,7 +8,7 @@
     android:paddingTop="@dimen/dp16"
     android:paddingRight="@dimen/dp16"
     android:paddingBottom="@dimen/dp16"
-    tools:context=".cirlceDialog.CircleDialogActivity">
+    tools:context=".circleDialog.CircleDialogActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

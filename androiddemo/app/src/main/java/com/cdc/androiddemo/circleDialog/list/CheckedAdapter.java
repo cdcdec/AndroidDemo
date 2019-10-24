@@ -1,4 +1,4 @@
-package com.cdc.androiddemo.cirlceDialog.list;
+package com.cdc.androiddemo.circleDialog.list;
 
 import android.content.Context;
 import android.util.SparseArray;

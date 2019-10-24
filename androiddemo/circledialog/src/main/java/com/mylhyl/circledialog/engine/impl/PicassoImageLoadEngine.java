@@ -13,7 +13,7 @@ import com.squareup.picasso.Picasso;
 public final class PicassoImageLoadEngine implements ImageLoadEngine {
     @Override
     public void loadImage(Context context, ImageView imageView, String url) {
-        Picasso.with(context)
+        Picasso.get()
                 .load(url)
                 .priority(Picasso.Priority.HIGH)
                 .centerInside()

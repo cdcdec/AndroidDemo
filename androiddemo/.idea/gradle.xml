@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/alertview" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/circledialog" />
+            <option value="$PROJECT_DIR$/dialog" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

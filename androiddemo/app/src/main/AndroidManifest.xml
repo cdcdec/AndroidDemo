@@ -20,7 +20,8 @@
         </activity>
 
         <activity android:name=".alertView.AlertViewActivity"/>
-        <activity android:name=".cirlceDialog.CircleDialogActivity"/>
+        <activity android:name=".circleDialog.CircleDialogActivity"/>
+        <activity android:name=".myCircleDialog.MyCircleDialogActivity"/>
 
 
     </application>

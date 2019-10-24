@@ -1,4 +1,4 @@
-package com.cdc.androiddemo.cirlceDialog;
+package com.cdc.androiddemo.circleDialog;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -18,11 +18,11 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.cdc.androiddemo.R;
-import com.cdc.androiddemo.cirlceDialog.entities.MySectionEntity;
-import com.cdc.androiddemo.cirlceDialog.entities.PictureTypeEntity;
-import com.cdc.androiddemo.cirlceDialog.entities.WeiBoItem;
-import com.cdc.androiddemo.cirlceDialog.list.CheckedAdapter;
-import com.cdc.androiddemo.cirlceDialog.list.ListViewActivity;
+import com.cdc.androiddemo.circleDialog.entities.MySectionEntity;
+import com.cdc.androiddemo.circleDialog.entities.PictureTypeEntity;
+import com.cdc.androiddemo.circleDialog.entities.WeiBoItem;
+import com.cdc.androiddemo.circleDialog.list.CheckedAdapter;
+import com.cdc.androiddemo.circleDialog.list.ListViewActivity;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseSectionQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;

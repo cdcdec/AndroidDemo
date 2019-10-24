@@ -1,13 +1,15 @@
-package com.mylhyl.circledialog;
+package com.cdc.dialog.util;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
+import android.view.View;
 
-final class SystemBarConfig {
-
+public  class SystemBarConfig {
     private static final String STATUS_BAR_HEIGHT_RES_NAME = "status_bar_height";
 
     private final int mStatusBarHeight;
@@ -55,10 +57,19 @@ final class SystemBarConfig {
         return mStatusBarHeight;
     }
 
-
     public static int dp2px(Context context, float value) {
         return (int) (TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, value
                 , context.getResources().getDisplayMetrics()) + 0.5f);
+    }
+
+
+
+    public static void handleBackground(View view, Drawable background) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            view.setBackground(background);
+        } else {
+            view.setBackgroundDrawable(background);
+        }
     }
 
 }

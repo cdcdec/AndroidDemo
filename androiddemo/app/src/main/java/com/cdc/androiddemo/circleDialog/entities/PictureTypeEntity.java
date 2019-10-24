@@ -1,4 +1,4 @@
-package com.cdc.androiddemo.cirlceDialog.entities;
+package com.cdc.androiddemo.circleDialog.entities;
 
 /**
  * Created by hupei on 2017/3/31.

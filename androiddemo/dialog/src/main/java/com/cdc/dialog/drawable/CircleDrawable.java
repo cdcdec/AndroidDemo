@@ -1,5 +1,7 @@
-package com.mylhyl.circledialog.res.drawable;
+package com.cdc.dialog.drawable;
+
 import android.graphics.drawable.ShapeDrawable;
+
 public class CircleDrawable extends ShapeDrawable {
 
     public CircleDrawable(int backgroundColor, int radius) {

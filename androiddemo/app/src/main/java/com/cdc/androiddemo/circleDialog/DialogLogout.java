@@ -1,4 +1,4 @@
-package com.cdc.androiddemo.cirlceDialog;
+package com.cdc.androiddemo.circleDialog;
 
 import android.content.Context;
 import android.os.Bundle;

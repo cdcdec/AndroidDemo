@@ -50,7 +50,17 @@ public class HeaderAndFooterUseActivity extends BaseActivity {
         });
         headerAndFooterAdapter.addFooterView(footerView, 0);
 
+        View footerView2 = getFooterView(0, new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        headerAndFooterAdapter.addFooterView(footerView2, 0);
         mRecyclerView.setAdapter(headerAndFooterAdapter);
+
+
 
     }
 

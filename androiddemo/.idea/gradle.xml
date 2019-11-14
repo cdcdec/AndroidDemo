@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/crash" />
             <option value="$PROJECT_DIR$/mlog" />
+            <option value="$PROJECT_DIR$/tablayout" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

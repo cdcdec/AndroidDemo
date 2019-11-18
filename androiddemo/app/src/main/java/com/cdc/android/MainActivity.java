@@ -1,9 +1,8 @@
-package com.cdc.androiddemo;
+package com.cdc.android;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.util.Log;
 
 import com.cdc.mlog.MLog;
 

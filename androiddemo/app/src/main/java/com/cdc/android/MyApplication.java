@@ -1,4 +1,4 @@
-package com.cdc.androiddemo;
+package com.cdc.android;
 
 import android.app.Application;
 

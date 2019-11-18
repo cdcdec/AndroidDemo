@@ -1,11 +1,8 @@
-package com.cdc.android;
+package com.cdc.android.trip;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-
-import com.cdc.mlog.MLog;
-
 public class MainActivity extends AppCompatActivity {
 
     String a=null;

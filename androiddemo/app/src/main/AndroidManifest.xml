@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.cdc.android">
+    package="com.cdc.android.trip">
 
     <application
-        android:name="com.cdc.android.MyApplication"
+        android:name="com.cdc.android.trip.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -12,7 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name="com.cdc.android.MainActivity">
+
+        <!-- 设置key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="b6298700770799b8f518ec2006ebdea2"/>
+
+        <!-- 定位需要的服务 适配Android Q需要加上android:foregroundServiceType="location"-->
+        <service
+            android:name="com.amap.api.location.APSService"
+            android:foregroundServiceType="location" />
+
+        <activity android:name="com.cdc.android.trip.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

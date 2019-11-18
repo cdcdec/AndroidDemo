@@ -1,2 +1,3 @@
 include ':app',':crash',':mlog'
+include ':diagnose:locdiagnoselib'
 rootProject.name='AndroidDemo'

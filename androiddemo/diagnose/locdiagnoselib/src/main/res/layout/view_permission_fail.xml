@@ -13,7 +13,7 @@
         android:padding="16dp"
         android:gravity="center"
         android:textColor="#000000"
-        android:textSize="@dimen/sp16"
+        android:textSize="16sp"
         tools:text="需要定位、存储权限"/>
 
     <View

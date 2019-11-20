@@ -9,8 +9,8 @@
         android:id="@+id/item_view_diagnose_result_icon"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginTop="2@dimen/dp5"
-        android:layout_marginBottom="2@dimen/dp5"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         tools:src="@drawable/wifi"/>
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/item_view_diagnose_result_icon"
         android:layout_below="@id/item_view_diagnose_result_title"
-        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginTop="5dp"
         android:layout_marginRight="60dp"
         android:textSize="10dp"
         android:textColor="#ec5757"
@@ -41,9 +41,9 @@
         android:id="@+id/item_view_diagnose_result_ok"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_marginTop="2@dimen/dp5"
+        android:layout_marginTop="25dp"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="1@dimen/dp5"
+        android:layout_marginRight="15dp"
         tools:src="@drawable/ok"/>
 
     <LinearLayout

@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dp10"
         android:text="@string/locDiagnose_detail"
-        android:textSize="@dimen/sp20"/>
+        android:textSize="@dimen/sp12"/>
 
     <Button
         android:id="@+id/btn_startDiagnose"
@@ -18,5 +18,5 @@
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/dp5"
         android:text="@string/startDiagnose"
-        android:textSize="@dimen/sp20"/>
+        android:textSize="@dimen/sp10"/>
 </LinearLayout>

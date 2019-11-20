@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#ffffff"
-        android:textSize="@dimen/sp16"
+        android:textSize="16sp"
         tools:text="0项"/>
 
     <TextView
@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="1@dimen/dp5"
+        android:layout_marginBottom="15dp"
         android:textColor="#ffffff"
         android:textSize="18dp"
         tools:text="所有功能正常"/>

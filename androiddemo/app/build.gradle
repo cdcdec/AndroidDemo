@@ -14,7 +14,7 @@ android {
         }
     }
     defaultConfig {
-        applicationId "com.cdc.android"
+        applicationId "com.cdc.android.tts"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1

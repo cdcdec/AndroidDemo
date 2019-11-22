@@ -1,4 +1,4 @@
-﻿package com.cdc.android.tts;
+﻿package com.cdc.android.log;
 
 import androidx.appcompat.app.AppCompatActivity;
 

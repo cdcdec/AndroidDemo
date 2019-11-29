@@ -1,2 +1,2 @@
-include ':app',':crash',':mlog'
+include ':app',':crash',':mlog',':screen'
 rootProject.name='AndroidDemo'

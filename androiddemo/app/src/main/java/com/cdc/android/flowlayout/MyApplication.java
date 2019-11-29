@@ -1,4 +1,4 @@
-package com.cdc.android;
+package com.cdc.android.flowlayout;
 
 import android.app.Application;
 

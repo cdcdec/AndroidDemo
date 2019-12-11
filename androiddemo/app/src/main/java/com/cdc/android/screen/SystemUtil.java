@@ -1,4 +1,5 @@
 package com.cdc.android.screen;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.telephony.TelephonyManager;
@@ -55,6 +56,7 @@ public class SystemUtil {
      *
      * @return  手机IMEI
      */
+    @SuppressLint("MissingPermission")
     public static String getIMEI(Context ctx) {
         TelephonyManager tm = (TelephonyManager) ctx.getSystemService(Activity.TELEPHONY_SERVICE);
         if (tm != null) {

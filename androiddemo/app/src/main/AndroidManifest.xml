@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.cdc.android.screen">
 
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <application
         android:name="com.cdc.android.screen.MyApplication"
         android:allowBackup="true"

@@ -25,7 +25,8 @@ public class SlidingTabActivity extends AppCompatActivity implements OnTabSelect
     private ArrayList<Fragment> mFragments = new ArrayList<>();
     private final String[] mTitles = {
             "热门", "iOS", "Android"
-            , "前端", "后端", "设计", "工具资源"
+            , "前端", "后端", "设计", "工具资源","热门2", "iOS2", "Android2"
+            , "前端2", "后端2", "设计2", "工具资源2"
     };
     private MyPagerAdapter mAdapter;
 
